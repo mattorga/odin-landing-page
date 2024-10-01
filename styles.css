@@ -1,154 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  font-family: Roboto, sans-serif;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
+	font-family: Roboto, sans-serif;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
 }
 
 ul {
-  list-style-type: none;
-  margin:0;
-  padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-a, .header .hero .secondary {
-  text-decoration: none;
-  font-size: 18px;
-  color: #E5E7EB;
+a,
+.header .hero .secondary {
+	text-decoration: none;
+	font-size: 18px;
+	color: #e5e7eb;
 }
 
 button {
-  font-size: 18px;
-  padding: 8px 32px;
-  border-radius: 8px;
-  color: #E5E7EB;
-  font-weight: 600;
+	font-size: 18px;
+	padding: 8px 32px;
+	border-radius: 8px;
+	color: #e5e7eb;
+	font-weight: 600;
 }
 
-button, .modal {
-  background-color: #3882F6;
+button,
+.modal {
+	background-color: #3882f6;
 }
 
 .header {
-  padding: 16px 20%;
+	padding: 16px 20%;
 }
 
-.header, .footer{
-  background-color: #1F2937;
+.header,
+.footer {
+	background-color: #1f2937;
+}
+
+.header-image {
+	flex: 1;
+	background-color: gray;
+	text-align: center;
+	align-content: center;
+	color: #e5e7eb;
+  min-height: 250px;
 }
 
 .top {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .links {
-  display: flex;
-  gap: 24px;
+	display: flex;
+	gap: 24px;
 }
 
 .logo {
-  font-size: 24px;
-  color: #F9FAF8;
-  font-weight: 600;
+	font-size: 24px;
+	color: #f9faf8;
+	font-weight: 600;
 }
 
-.content{
-  display: flex;
-  margin: 96px 0;
-  gap: 32px;
+.content {
+	display: flex;
+	margin: 96px 0;
+	gap: 32px;
 }
 
 .hero {
-  flex: 1;
+	flex: 1;
+  align-content: center;
 }
 
 .content img {
-  flex: 1;
+	flex: 1;
 }
 
 .hero .main {
-  font-size: 48px;
-  color: #F9FAF8;
-  font-weight: 900;
+	font-size: 48px;
+	color: #f9faf8;
+	font-weight: 900;
 }
 
 .hero button {
-  margin-top: 16px;
-  border: none;
+	margin-top: 16px;
+	border: none;
 }
 
 .information {
-  padding: 16px 20%;
+	padding: 16px 20%;
 }
 
 .info-header {
-  font-size: 36px;
-  color: #1F2937;
-  font-weight: 900;
-  text-align: center;
-  margin: 32px;
+	font-size: 36px;
+	color: #1f2937;
+	font-weight: 900;
+	text-align: center;
+	margin: 32px;
 }
 
 .items {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 96px;
   gap: 32px;
 }
 
+.item {
+  flex: 0 1 auto;  
+  min-width: 150px; 
+  max-width: 200px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
 .subtext {
-  text-align: center;
-  color: #5c5c5c;
+	text-align: center;
+	color: #5c5c5c;
+}
+
+.information-image {
+	border-style: solid;
+	border-radius: 8px;
+	border-color: #3882f6;
+	width: 150px;
+	height: 150px;
 }
 
 .quote {
-  display: flex;
-  flex-direction: column;
-  background-color: #E5E7EB; 
-  padding: 112px 20%;
-  gap: 16px;
+	display: flex;
+	flex-direction: column;
+	background-color: #e5e7eb;
+	padding: 112px 20%;
+	gap: 16px;
 }
 
-.quote-text{
-  font-size: 36px;
-  font-style: italic;
-  font-weight: lighter;
-  color: #1F2937;
+.quote-text {
+	font-size: 36px;
+	font-style: italic;
+	font-weight: lighter;
+	color: #1f2937;
 }
 
 .author {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: end;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: end;
 }
 
 .call {
-  padding: 112px 20%;
+	padding: 112px 20%;
 }
 
 .modal {
-  border-radius: 8px;
-  padding: 32px 80px;
-  display: flex;
-  justify-content: space-between;
+	border-radius: 8px;
+	padding: 32px 80px;
+	display: flex;
+	justify-content: space-between;
+  gap: 32px;
 }
 
-.modal-main, .modal-secondary {
-  color: #E5E7EB;
+.modal-main,
+.modal-secondary {
+	color: #e5e7eb;
 }
 
 .modal-main {
-  font-weight: bold;
+	font-weight: bold;
 }
 
-.modal-signup{
-  border-color:#E5E7EB;
+.modal-signup {
+	border-color: #e5e7eb;
 }
 
 .footer {
-  padding: 32px 0;
-  text-align: center;
-  color: #E5E7EB;
+	padding: 32px 0;
+	text-align: center;
+	color: #e5e7eb;
 }
